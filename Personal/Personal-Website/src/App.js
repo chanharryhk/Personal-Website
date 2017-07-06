@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import SimpleStorageContract from '../build/contracts/SimpleStorage.json'
 import getWeb3 from './utils/getWeb3'
 
-import Introduction from './containers/introduction.jsx'
+import Introduction from './containers/introduction.jsx';
+import ContactBar from './containers/contactBar.jsx';
 
 import './App.css';
 class App extends Component {
@@ -74,6 +75,7 @@ class App extends Component {
         </nav>
         */}
         <Introduction/>
+        <ContactBar/>
       </div>
     );
   }

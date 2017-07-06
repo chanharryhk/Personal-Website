@@ -13,13 +13,12 @@ const Title = styled.h1`
 
 const Introduction = styled.div`
   text-align: center;
-  position: absolute;
   width: 900px;
-  height: 200px;
-  margin: 10% auto;
+  height: 300px;
+  margin: 15% auto;
   left: 0;
   right: 0;
-  zIndex: 2;
+  color: white;
 `;
 
 const rainbowStyle = {
@@ -30,16 +29,31 @@ const rainbowStyle = {
 
 const backgroundVideo = {
   width: "100%",
-  height: "100%",
-  float: "left",
-  top: 0,
-  padding: "none",
-  position: "absolute",// optional depending on what you wan
-  zIndex: 1,
-  opacity: .50,
+  height: "103%",
+  // float: "left",
+  // top: 0,
+  // padding: "none",
+  // position: "absolute",// optional depending on what you wan
+  // opacity: 1,
+  opacity: 0.9,
 }
-const sectionStyle = {
-  overflowX: "hidden"
+
+const iframeBox = {
+ width: "100%",
+ height: "100%",
+ position: "absolute",
+ left: 0,
+ top: 0,
+ zIndex: -99,
+}
+
+const dotMatrix = {
+  background: "url(http://s14.directupload.net/images/111129/44ga9qid.png)",
+  height: "100%",
+  width: "100%",
+  top: 0,
+  zIndex: 1,
+  overflowX: "hidden",
 }
 
 class introduction extends Component {
@@ -51,22 +65,19 @@ class introduction extends Component {
   }
   render(){
     return(
-      <div style={sectionStyle}>
-        <Introduction>
+      <div style={dotMatrix}>
+        <Introduction style={{zIndex: 2}}>
           <Title>Hello, I'm Harry Chan</Title>
           <Greeting/>
           <Title>Let's Build Something
               <span style={rainbowStyle} className="rainbow">Awesome</span>
           </Title>
         </Introduction>
-        {/*
-
-
-
-        <iframe style={backgroundVideo}
-          src={this.state.videoURL} frameBorder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
-        </iframe>
-        */}
+        <div style={iframeBox}>
+          <iframe style={backgroundVideo}
+            src={this.state.videoURL} frameBorder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+          </iframe>
+        </div>
       </div>
 
     );
