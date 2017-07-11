@@ -52,8 +52,14 @@ const dotMatrix = {
   height: "100%",
   width: "100%",
   top: 0,
+  left: 0,
   zIndex: 1,
+  position: "relative",
   overflowX: "hidden",
+}
+
+const test = {
+
 }
 
 class introduction extends Component {
@@ -65,21 +71,22 @@ class introduction extends Component {
   }
   render(){
     return(
-      <div style={dotMatrix}>
-        <Introduction style={{zIndex: 2}}>
-          <Title>Hello, I'm Harry Chan</Title>
-          <Greeting/>
-          <Title>Let's Build Something
-              <span style={rainbowStyle} className="rainbow">Awesome</span>
-          </Title>
-        </Introduction>
-        <div style={iframeBox}>
-          <iframe style={backgroundVideo}
-            src={this.state.videoURL} frameBorder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
-          </iframe>
+      <section>
+        <div style={dotMatrix}>
+          <Introduction style={{zIndex: 2}}>
+            <Title>Hello, I'm Harry Chan</Title>
+            <Greeting/>
+            <Title>Let's Build Something
+                <span style={rainbowStyle} className="rainbow">Awesome</span>
+            </Title>
+          </Introduction>
+          <div style={iframeBox}>
+            <iframe style={backgroundVideo}
+              src={this.state.videoURL} frameBorder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+            </iframe>
+          </div>
         </div>
-      </div>
-
+      </section>
     );
   }
 

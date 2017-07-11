@@ -4,6 +4,7 @@ import getWeb3 from './utils/getWeb3'
 
 import Introduction from './containers/introduction.jsx';
 import ContactBar from './containers/contactBar.jsx';
+import DonationsBar from './containers/donations.jsx';
 
 import './App.css';
 class App extends Component {
@@ -76,6 +77,7 @@ class App extends Component {
         */}
         <Introduction/>
         <ContactBar/>
+        <DonationsBar/>
       </div>
     );
   }
