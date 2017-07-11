@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Greeting from './greeting.jsx';
 import styled from 'styled-components';
 
+import ContactBar from './contactBar.jsx';
+
 import '../App.css';
 
 const Title = styled.h1`
@@ -39,6 +41,7 @@ const backgroundVideo = {
 }
 
 const iframeBox = {
+ background: "url(http://s14.directupload.net/images/111129/44ga9qid.png)",
  width: "100%",
  height: "100%",
  position: "absolute",
@@ -47,19 +50,15 @@ const iframeBox = {
  zIndex: -99,
 }
 
-const dotMatrix = {
-  background: "url(http://s14.directupload.net/images/111129/44ga9qid.png)",
-  height: "100%",
-  width: "100%",
-  top: 0,
-  left: 0,
-  zIndex: 1,
-  position: "relative",
-  overflowX: "hidden",
-}
 
-const test = {
 
+const iframeBlocker = {
+	position: "absolute",
+	top: 0,
+	left: 0,
+	width:"100%",
+	height:"100%",
+	zIndex: 2
 }
 
 class introduction extends Component {
@@ -71,22 +70,21 @@ class introduction extends Component {
   }
   render(){
     return(
-      <section>
-        <div style={dotMatrix}>
-          <Introduction style={{zIndex: 2}}>
-            <Title>Hello, I'm Harry Chan</Title>
-            <Greeting/>
-            <Title>Let's Build Something
-                <span style={rainbowStyle} className="rainbow">Awesome</span>
-            </Title>
-          </Introduction>
-          <div style={iframeBox}>
-            <iframe style={backgroundVideo}
-              src={this.state.videoURL} frameBorder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
-            </iframe>
-          </div>
-        </div>
-      </section>
+      <div>
+        <Introduction style={{zIndex: 2}}>
+          <Title>Hello, I'm Harry Chan</Title>
+          <Greeting/>
+          <Title>Let's Build Something
+              <span style={rainbowStyle} className="rainbow">Awesome</span>
+          </Title>
+        </Introduction>
+				<div style={iframeBox}>
+					<div style={iframeBlocker}></div>
+					<iframe style={backgroundVideo}
+						src={this.state.videoURL} frameBorder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+					</iframe>
+				</div>
+    	</div>
     );
   }
 

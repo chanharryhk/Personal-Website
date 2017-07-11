@@ -7,6 +7,16 @@ import ContactBar from './containers/contactBar.jsx';
 import DonationsBar from './containers/donations.jsx';
 
 import './App.css';
+
+const dotMatrix = {
+  height: "100%",
+  width: "100%",
+  top: 0,
+  left: 0,
+  zIndex: 1,
+  position: "absolute",
+}
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -69,7 +79,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div style={dotMatrix}>
         {/*
         <nav className="navbar pure-menu pure-menu-horizontal">
             <a href="#" className="pure-menu-heading pure-menu-link">Truffle Box</a>
@@ -78,6 +88,7 @@ class App extends Component {
         <Introduction/>
         <ContactBar/>
         <DonationsBar/>
+
       </div>
     );
   }

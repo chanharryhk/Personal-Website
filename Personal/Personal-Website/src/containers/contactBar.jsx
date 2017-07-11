@@ -36,30 +36,28 @@ class contactBar extends Component {
   }
   render(){
     return(
-      <section>
-        <div style={iconBarStyle}>
-          <div style={iconContainerStyle}>
-            <a href="https://github.com/chanharryhk">
-              <img style={iconStyle} src={githubIcon} alt="github" height="75" width="75"/>
-            </a>
-          </div>
-          <div style={iconContainerStyle}>
-            <a href="https://www.linkedin.com/in/harry-chan-629003134/">
-              <img style={iconStyle} src={linkedinIcon} alt="" height="75" width="75"/>
-            </a>
-          </div>
-          <div style={iconContainerStyle}>
-            <a href="mailto:chanharryhk@gmail.com">
-              <img style={iconStyle} src={mailboxIcon} alt="" height="75" width="75"/>
-            </a>
-          </div>
-          <div style={iconContainerStyle}>
-            <a href="https://open.spotify.com/user/shado_blade/playlist/1IkRf0Wb0ZG60yODbKFXl7">
-              <img style={iconStyle} src={spotifyIcon} alt="mail" height="75" width="75"/>
-            </a>
-          </div>
+      <div style={iconBarStyle}>
+        <div style={iconContainerStyle}>
+          <a href="https://github.com/chanharryhk">
+            <img style={iconStyle} src={githubIcon} alt="github" height="75" width="75"/>
+          </a>
         </div>
-      </section>
+        <div style={iconContainerStyle}>
+          <a href="https://www.linkedin.com/in/harry-chan-629003134/">
+            <img style={iconStyle} src={linkedinIcon} alt="" height="75" width="75"/>
+          </a>
+        </div>
+        <div style={iconContainerStyle}>
+          <a href="mailto:chanharryhk@gmail.com">
+            <img style={iconStyle} src={mailboxIcon} alt="" height="75" width="75"/>
+          </a>
+        </div>
+        <div style={iconContainerStyle}>
+          <a href="https://open.spotify.com/user/shado_blade/playlist/1IkRf0Wb0ZG60yODbKFXl7">
+            <img style={iconStyle} src={spotifyIcon} alt="mail" height="75" width="75"/>
+          </a>
+        </div>
+      </div>
     );
   }
 }
