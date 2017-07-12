@@ -5,10 +5,12 @@ import getWeb3 from './utils/getWeb3'
 import Introduction from './containers/introduction.jsx';
 import ContactBar from './containers/contactBar.jsx';
 import DonationsBar from './containers/donations.jsx';
+import ExperienceBar from './containers/experience.jsx';
+import ProjectsBar from './containers/projects.jsx';
 
 import './App.css';
 
-const dotMatrix = {
+const referenceStyle = {
   height: "100%",
   width: "100%",
   top: 0,
@@ -79,7 +81,7 @@ class App extends Component {
 
   render() {
     return (
-      <div style={dotMatrix}>
+      <div style={referenceStyle}>
         {/*
         <nav className="navbar pure-menu pure-menu-horizontal">
             <a href="#" className="pure-menu-heading pure-menu-link">Truffle Box</a>
@@ -87,8 +89,8 @@ class App extends Component {
         */}
         <Introduction/>
         <ContactBar/>
-        <DonationsBar/>
-
+        <ExperienceBar/>
+        <ProjectsBar/>
       </div>
     );
   }

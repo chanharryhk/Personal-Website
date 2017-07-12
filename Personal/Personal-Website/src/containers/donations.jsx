@@ -6,12 +6,9 @@ const donationsBarStyle = {
   backgroundColor: "#4885ed",
   fontFamily: "Helvetica Neue, Arial ,sansSerif",
   left: 0,
-  width: "100%",
-  height: "90px",
-  textAlign: "center",
-  display: "block",
-  paddingTop: "35px",
-  paddingBottom: "20px",
+  height: "100%",
+  display: "flex",
+  verticalAlign: "center",
 }
 
 class donations extends Component{
@@ -19,8 +16,11 @@ class donations extends Component{
     return(
       <section>
         <div style={donationsBarStyle}>
+          <h1>Donations</h1>
+
           <h1>Website Still Under Construction</h1>
           <img src={pylon} alt="github" height="75" width="75"/>
+          
         </div>
       </section>
     );

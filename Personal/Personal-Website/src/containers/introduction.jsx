@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import Greeting from './greeting.jsx';
 import styled from 'styled-components';
 
-import ContactBar from './contactBar.jsx';
-
 import '../App.css';
 
 const Title = styled.h1`
@@ -49,8 +47,6 @@ const iframeBox = {
  top: 0,
  zIndex: -99,
 }
-
-
 
 const iframeBlocker = {
 	position: "absolute",

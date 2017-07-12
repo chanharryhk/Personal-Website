@@ -9,22 +9,18 @@ const iconBarStyle = {
   backgroundColor: "#f4c20d",
   fontFamily: "Helvetica Neue, Arial ,sansSerif",
   left: 0,
-  width: "100%",
-  height: "90px",
-  display: "block",
-  paddingTop: "35px",
-  paddingBottom: "20px",
+  height: "15%",
+  display: "flex",
+  verticalAlign: "center",
 }
 
 const iconContainerStyle = {
   zIndex: 100,
-  display: 'inline-block',
-  width: "25%",
-  verticalAlign: 'middle',
+  margin: "auto",
+  // backgroundColor: "blue",
 }
 const iconStyle = {
-  display: "block",
-  margin: "auto",
+  // backgroundColor: "yellow",
 }
 
 class contactBar extends Component {
@@ -39,27 +35,29 @@ class contactBar extends Component {
       <div style={iconBarStyle}>
         <div style={iconContainerStyle}>
           <a href="https://github.com/chanharryhk">
-            <img style={iconStyle} src={githubIcon} alt="github" height="75" width="75"/>
+            <img style={iconStyle} src={githubIcon} alt="github" height="60" width="60"/>
           </a>
         </div>
         <div style={iconContainerStyle}>
           <a href="https://www.linkedin.com/in/harry-chan-629003134/">
-            <img style={iconStyle} src={linkedinIcon} alt="" height="75" width="75"/>
+            <img style={iconStyle} src={linkedinIcon} alt="linkedin" height="60" width="60"/>
           </a>
         </div>
         <div style={iconContainerStyle}>
-          <a href="mailto:chanharryhk@gmail.com">
-            <img style={iconStyle} src={mailboxIcon} alt="" height="75" width="75"/>
+          <a href="mailto://chanharryhk@gmail.com">
+            <img style={iconStyle} src={mailboxIcon} alt="mail" height="60" width="60"/>
           </a>
         </div>
         <div style={iconContainerStyle}>
           <a href="https://open.spotify.com/user/shado_blade/playlist/1IkRf0Wb0ZG60yODbKFXl7">
-            <img style={iconStyle} src={spotifyIcon} alt="mail" height="75" width="75"/>
+            <img style={iconStyle} src={spotifyIcon} alt="spotify" height="60" width="60"/>
           </a>
         </div>
       </div>
     );
   }
 }
+
+
 
 export default contactBar;
