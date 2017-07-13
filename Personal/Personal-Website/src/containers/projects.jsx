@@ -8,6 +8,8 @@ const projectBarStyle = {
   left: 0,
   height: "100%",
   textAlign: "center",
+  // display: "flex",
+  // verticalAlign: "center",
 }
 const titleStyle = {
   color: "white",

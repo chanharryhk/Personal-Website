@@ -7,6 +7,7 @@ import ContactBar from './containers/contactBar.jsx';
 import DonationsBar from './containers/donations.jsx';
 import ExperienceBar from './containers/experience.jsx';
 import ProjectsBar from './containers/projects.jsx';
+import ContactMeBar from './containers/contactMe.jsx';
 
 import './App.css';
 
@@ -90,6 +91,7 @@ class App extends Component {
         <Introduction/>
         <ContactBar/>
         <ExperienceBar/>
+        <ContactMeBar/>
         <ProjectsBar/>
       </div>
     );

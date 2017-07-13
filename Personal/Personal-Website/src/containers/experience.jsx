@@ -9,7 +9,7 @@ import EcuadorBackground from '../images/EcuadorBackground.png';
 
 const experienceBarStyle = {
   zIndex: 3,
-  backgroundColor: "#0097aa",
+  backgroundColor: "#00bcd4",
   fontFamily: "Helvetica Neue, Arial ,sansSerif",
   left: 0,
   height: "100%",
@@ -48,8 +48,6 @@ class experience extends Component{
         <h1>Website Still Under Construction</h1>
         <img src={pylon} alt="github" height="75" width="75"/>
         */}
-
-
           <Tabs value={this.state.value} onChange={this.handleChange}>
             <Tab label="ConsenSys" value="a">
               <div>
