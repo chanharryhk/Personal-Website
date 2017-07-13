@@ -87,12 +87,13 @@ class App extends Component {
         <nav className="navbar pure-menu pure-menu-horizontal">
             <a href="#" className="pure-menu-heading pure-menu-link">Truffle Box</a>
         </nav>
+
         */}
         <Introduction/>
         <ContactBar/>
         <ExperienceBar/>
-        <ContactMeBar/>
         <ProjectsBar/>
+        <ContactMeBar/>
       </div>
     );
   }

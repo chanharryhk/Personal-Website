@@ -1,37 +1,70 @@
 import React, {Component} from 'react';
-import pylon from '../images/pylon.png'
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import Paper from 'material-ui/Paper';
+import Vault from '../images/vault.png';
+import Particles from 'react-particles-js';
 
-const projectBarStyle = {
-  zIndex: 3,
-  backgroundColor: "#FF6D00",
-  fontFamily: "Helvetica Neue, Arial ,sansSerif",
-  left: 0,
-  height: "100%",
-  textAlign: "center",
-  // display: "flex",
-  // verticalAlign: "center",
-}
-const titleStyle = {
-  color: "white",
-  fontWeight: 400,
-  fontSize: "2.5em",
-  textTransform: "uppercase",
+const cardStyle = {
+  backgroundColor: "#1DE9B6",
 }
 
-class projects extends Component{
+const cardTextStyle = {
+  color: "#696969",
+}
+
+const imageStyle = {
+  verticalAlign: "middle",
+}
+
+const paperStyle = {
+  height: 300,
+  width: 396,
+  margin: 10,
+  align: 'center',
+  textAlign: 'center',
+  display: 'inline-block',
+};
+
+
+class contactMe extends Component{
   render(){
     return(
-      <section>
-        <div style={projectBarStyle}>
-          <h1 style={titleStyle}>Projects</h1>
-          <h1>Website Still Under Construction</h1>
-          <h3>Check out my Github to see what I've been up to for now!</h3>
-          <img src={pylon} alt="github" height="75" width="75"/>
-
-        </div>
-      </section>
+      <div>
+        <Card style={cardStyle}>
+          <CardText>
+            <CardTitle title="Projects" titleColor="white" style={{textTransform: "uppercase",}}/>
+            <Paper style={paperStyle} zDepth={4} rounded={true}>
+              <h1 style={cardTextStyle}>Ethereum</h1>
+              <br/>
+              <a href="https://carbonx-tokens.surge.sh">
+                <img src="https://image.flaticon.com/icons/svg/138/138201.svg" alt="Vault" height="100" width="100"/>
+              </a>
+              <br/>
+              <h1 style={cardTextStyle}>Carried Interest</h1>
+            </Paper>
+            <Paper style={paperStyle} zDepth={4} rounded={true}>
+              <h1 style={cardTextStyle}>T-Shirt</h1>
+              <br/>
+              <a href="https://github.com/chanharryhk/TShirt-Voting">
+                <img src="https://image.flaticon.com/icons/svg/363/363222.svg" alt="Smiley face" height="100" width="100"/>
+              </a>
+              <br/>
+              <h1 style={cardTextStyle}>Tokens</h1>
+            </Paper>
+            <Paper style={paperStyle} zDepth={4} rounded={true}>
+              <h1 style={cardTextStyle}>This Website</h1>
+              <br/>
+              <a href="https://harrychan.surge.sh">
+                <img src="https://image.flaticon.com/icons/svg/174/174249.svg" alt="Smiley face" height="100" width="100"/>
+              </a>
+              <br/>
+              <h1 style={cardTextStyle}>About Me</h1>
+            </Paper>
+          </CardText>
+        </Card>
+      </div>
     );
   }
 }
 
-export default projects;
+export default contactMe;

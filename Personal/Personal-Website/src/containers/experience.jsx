@@ -7,20 +7,8 @@ injectTapEventPlugin();
 import ConsenSysBackground from '../images/ConsenSysBackground.png';
 import EcuadorBackground from '../images/EcuadorBackground.png';
 
-const experienceBarStyle = {
-  zIndex: 3,
+const cardStyle = {
   backgroundColor: "#00bcd4",
-  fontFamily: "Helvetica Neue, Arial ,sansSerif",
-  left: 0,
-  height: "100%",
-  display: "flex",
-  justifyContent: "center",
-}
-
-const titleStyle = {
-  color: "white",
-  fontWeight: 400,
-  fontSize: "2.5em",
   textTransform: "uppercase",
 }
 
@@ -39,15 +27,12 @@ class experience extends Component{
   render(){
     return(
       <div>
-      <div style={experienceBarStyle}>
-        <h1 style={titleStyle}>Experience</h1>
-      </div>
-      <div >
-
-        {/*
-        <h1>Website Still Under Construction</h1>
-        <img src={pylon} alt="github" height="75" width="75"/>
-        */}
+        <div>
+          <Card style={cardStyle}>
+              <CardText>
+                <CardTitle title="Experience" titleColor="white" />
+              </CardText>
+          </Card>
           <Tabs value={this.state.value} onChange={this.handleChange}>
             <Tab label="ConsenSys" value="a">
               <div>

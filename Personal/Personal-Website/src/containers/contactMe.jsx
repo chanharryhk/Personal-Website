@@ -4,16 +4,6 @@ import Chat from '../images/chatContact.png';
 import Globe from '../images/globeContact.png';
 import Map from '../images/mapContact.png';
 
-const contactMeStyle = {
-  zIndex: 3,
-  backgroundColor: "#4885ed",
-  fontFamily: "Helvetica Neue, Arial ,sansSerif",
-  left: 0,
-  height: "100%",
-  display: "flex",
-  verticalAlign: "center",
-}
-
 const cardStyle = {
   backgroundColor: "#C2185B",
 }
