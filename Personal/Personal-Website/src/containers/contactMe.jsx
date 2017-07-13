@@ -3,9 +3,11 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Chat from '../images/chatContact.png';
 import Globe from '../images/globeContact.png';
 import Map from '../images/mapContact.png';
+import Particles from 'react-particles-js';
 
 const cardStyle = {
   backgroundColor: "#C2185B",
+  position: "relative",
 }
 
 const cardTextStyle = {
@@ -24,20 +26,23 @@ class contactMe extends Component{
         <Card style={cardStyle}>
           <CardText style={cardTextStyle}>
             <CardTitle title="Contact Me" titleColor="white" />
-            <ul style={{listStyle: "none"}}>
-              <li>
-                <img style={imageStyle} src={Map} alt="Map" height="50" width="50"/>
-                Toronto, ON
-              </li>
-              <li>
-                <img style={imageStyle} src={Chat} alt="Email" height="50" width="50"/>
-                chanharryhk@gmail.com
-              </li>
-              <li>
-                <img style={imageStyle} src={Globe} alt="Globe" height="50" width="50"/>
-                http://harrychan.surge.sh/
-              </li>
-            </ul>
+            <div style={{height: "200px", width: "100%", position: "relative"}}>
+              <Particles style={{position:"absolute"}}/>
+              <ul style={{listStyle: "none"}}>
+                <li>
+                  <img style={imageStyle} src={Map} alt="Map" height="50" width="50"/>
+                  Toronto, ON
+                </li>
+                <li>
+                  <img style={imageStyle} src={Chat} alt="Email" height="50" width="50"/>
+                  chanharryhk@gmail.com
+                </li>
+                <li>
+                  <img style={imageStyle} src={Globe} alt="Globe" height="50" width="50"/>
+                  http://harrychan.surge.sh/
+                </li>
+              </ul>
+            </div>
           </CardText>
         </Card>
       </div>

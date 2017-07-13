@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import Paper from 'material-ui/Paper';
 import Vault from '../images/vault.png';
-import Particles from 'react-particles-js';
 
 const cardStyle = {
   backgroundColor: "#1DE9B6",
