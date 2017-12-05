@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import Greeting from './components/greeting';
-import Scroll from './layout/scroll';
+import logo from './logo.svg';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Greeting/>
-        <Scroll/>
+      <div className="App">
+        <h1 className='title'>
+          Hello, I'm Harry Chan
+        </h1>
       </div>
     );
   }
