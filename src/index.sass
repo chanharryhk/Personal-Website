@@ -13,9 +13,9 @@ $shadows-small:  multiple-box-shadow(350)
 $shadows-medium: multiple-box-shadow(100)
 $shadows-big:    multiple-box-shadow(50)
 
-html
+html, body
   height: 100%
-  background: #1B2735
+  background-color: #1A2734
   //overflow: hidden
 
 .stars
@@ -87,6 +87,7 @@ html
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
 
+//Controls the speed of the stars
 @keyframes animStar
   from
     transform: translateY(0px)
