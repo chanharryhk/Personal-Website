@@ -59,9 +59,9 @@ class Navbar extends Component {
             </h1>
           </div>
           <div style={styles.rightBarContainer}>
-            <p style={styles.tabs}>About</p>
-            <p style={styles.tabs}>Projects</p>
-            <a href={resume}>
+            <p style={styles.tabs}>About Me</p>
+            <p style={styles.tabs}>Experience</p>
+            <a href={resume} target="_blank">
               <p style={styles.tabs}>Resume</p>
             </a>
             <p style={styles.tabs}>Contact</p>

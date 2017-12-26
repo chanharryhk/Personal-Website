@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import { Grid, Image, Divider} from 'semantic-ui-react';
 
 import ethWaterloo from '../images/ethWaterloo.png';
+import henry from '../images/henry.png';
+import ecuador from '../images/ecuador.jpg';
 
 const styles = {
   container: {
@@ -16,17 +18,21 @@ const styles = {
     padding: '20px',
   },
   grid:{
-    padding: '50px 0px'
+    padding: '50px 0px',
+    maxWidth: '80%',
+    textAlign: 'center',
+    margin: 'auto',
   },
   leftText: {
     color: 'white',
-    padding: '0px 50px 0px 150px',
   },
   rightText: {
     color: 'white',
-    padding: '0px 150px 0px 50px',
   },
 }
+const consensysNorthWebsite = 'https://consensystoronto.surge.sh';
+const happyEthereum = 'https://github.com/happyethereum';
+
 class Experience extends Component {
   render(){
     return(
@@ -39,25 +45,33 @@ class Experience extends Component {
         </div>
         <Grid stackable columns={2} style={styles.grid}>
           <Grid.Column textAlign='right' verticalAlign='middle' style={styles.leftText}>
-            <h2>EthWaterloo</h2>
+            <h2>
+              ConsenSys
+            </h2>
             <Divider/>
             <p>
-              Join us in Toronto on ConsenSys Blockchain <b>Pitch Night</b>!
+              I had the pleasure of interning with <i>ConsenSys Toronto</i> this summer!
               <br/><br/>
-              This is an interactive and fun pitch event where entrepreneurs showcase their ideas or companies to ConsenSys, get valuable feedback and compete for a chance get seed funding.
+              I am very fortunate to have been exposed to the crypto space and work
+              so closely with the Ethereum protocol! I dabbled on some smart contract writing,
+              as well as building some cool front-end React DApps!
               <br/><br/>
-              Pitches are 5 minutes + Q&A with judges.
+              Check out this website I built!
+              <br/>
+              <a href={consensysNorthWebsite} target='_blank'>
+                consensystoronto.surge.sh
+              </a>
             </p>
           </Grid.Column>
-          <Grid.Column textAlign='left'>
-            <Image size='large' rounded='true' wrapped='true' src={ethWaterloo} />
+          <Grid.Column textAlign='center'>
+            <Image size='large' rounded='true' wrapped='true' src={henry} />
           </Grid.Column>
         </Grid>
 
           {/* <--- EthWaterloo ---> */}
 
           <Grid stackable columns={2} style={styles.grid}>
-            <Grid.Column textAlign='right'>
+            <Grid.Column textAlign='center'>
               <Image size='large' rounded='true' wrapped='true' src={ethWaterloo} />
             </Grid.Column>
             <Grid.Column textAlign='left' verticalAlign='middle' style={styles.rightText}>
@@ -68,7 +82,11 @@ class Experience extends Component {
                 <br/><br/>
                 This is an interactive and fun pitch event where entrepreneurs showcase their ideas or companies to ConsenSys, get valuable feedback and compete for a chance get seed funding.
                 <br/><br/>
-                Pitches are 5 minutes + Q&A with judges.
+                The repository is still growing even after the hackathon!
+                <br/>
+                <a href={happyEthereum} target='_blank'>
+                  Happy-ENS
+                </a>
               </p>
             </Grid.Column>
           </Grid>
@@ -77,7 +95,7 @@ class Experience extends Component {
 
           <Grid stackable columns={2} style={styles.grid}>
             <Grid.Column textAlign='right' verticalAlign='middle' style={styles.leftText}>
-              <h2>EthWaterloo</h2>
+              <h2>Me to We</h2>
               <Divider/>
               <p>
                 Join us in Toronto on ConsenSys Blockchain <b>Pitch Night</b>!
@@ -87,8 +105,8 @@ class Experience extends Component {
                 Pitches are 5 minutes + Q&A with judges.
               </p>
             </Grid.Column>
-            <Grid.Column textAlign='left'>
-              <Image size='large' rounded='true' wrapped='true' src={ethWaterloo} />
+            <Grid.Column textAlign='center'>
+              <Image size='large' rounded='true' wrapped='true' src={ecuador} />
             </Grid.Column>
           </Grid>
       </div>
