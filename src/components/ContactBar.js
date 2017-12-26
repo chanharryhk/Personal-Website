@@ -20,8 +20,8 @@ class ContactBar extends Component {
           <Image style={styles.icon} src={linkedIn} />
           <Image style={styles.icon} src={mail} />
           <Image style={styles.icon} src={medium} />
-        </Image.Group>
 
+        </Image.Group>
       </div>
     );
   }

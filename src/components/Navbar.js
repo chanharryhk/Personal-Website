@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Icon, Image } from 'semantic-ui-react';
 import etherIcon from '../images/ether.svg';
 // import './Navbar.sass';
+import resume from '../Resume/Harry_Chan_Resume.pdf';
 
 const styles = {
   bar: {
@@ -60,7 +61,9 @@ class Navbar extends Component {
           <div style={styles.rightBarContainer}>
             <p style={styles.tabs}>About</p>
             <p style={styles.tabs}>Projects</p>
-            <p style={styles.tabs}>Resume</p>
+            <a href={resume}>
+              <p style={styles.tabs}>Resume</p>
+            </a>
             <p style={styles.tabs}>Contact</p>
           </div>
         </div>

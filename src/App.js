@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Navbar from './components/Navbar';
 import Introduction from './components/Introduction';
 import ContactBar from './components/ContactBar';
+import Experience from './components/Experience';
 import './App.css';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
         <Navbar/>
         <Introduction/>
         <ContactBar/>
+        <Experience/>
       </div>
     );
   }
