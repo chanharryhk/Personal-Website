@@ -7,7 +7,7 @@ import ecuador from '../images/ecuador.jpg';
 
 const styles = {
   container: {
-    paddingTop: '20%',
+    paddingTop: '100px',
   },
   title: {
     display: 'table',

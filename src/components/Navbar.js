@@ -1,74 +1,85 @@
 import React, {Component} from 'react';
 import { Icon, Image } from 'semantic-ui-react';
 import etherIcon from '../images/ether.svg';
-// import './Navbar.sass';
+import { StyleSheet, css } from 'aphrodite';
 import resume from '../Resume/Harry_Chan_Resume.pdf';
 
-const styles = {
-  bar: {
-    position: 'fixed',
-    color: 'white',
-    padding: '20px',
-    fontFamily: 'lato, sans-serif',
-    fontWeight: '100',
-    fontSize: '15px',
-    width: '100%',
-  },
-  leftBarContainer: {
-    display: 'inline-block',
-  },
-  rightBarContainer: {
-    display: 'inline-block',
-    marginLeft: '30%'
-  },
-  icon: {
-    height: '50px',
-    width: '50px',
-    verticalAlign: 'middle',
-  },
-  tabs: {
-    display: 'inline-block',
-    margin: '5px 25px 5px 25px',
-  }
-
-}
-/*
-list: {
-  listStyle: 'none',
-  textAlign: 'center',
-},
-tabs: {
-  verticalAlign: 'middle',
-},
-<ul style={styles.list}>
-  <li style={styles.tabs}><img src={etherIcon} style={styles.icon}/></li>
-  <li style={styles.tabs}>Blockchain Developer</li>
-  <li style={styles.tabs}>Blockchain Developer</li>
-</ul>
-*/
 class Navbar extends Component {
     render() {
       return(
-        <div style={styles.bar}>
-          <div style={styles.leftBarContainer}>
-            <h1 style={styles.tabs}>
+        <div className={css(styles.bar)}>
+          <div className={css(styles.titleContainer)}>
                   {/*
                   <img src={etherIcon} style={styles.icon}/>
                   */}
                 Blockchain Developer
-            </h1>
           </div>
-          <div style={styles.rightBarContainer}>
-            <p style={styles.tabs}>About Me</p>
-            <p style={styles.tabs}>Experience</p>
+          <div className={css(styles.navigationContainer)}>
+            <p className={css(styles.navigationItem)}>About Me</p>
+            <p className={css(styles.navigationItem)}>Experience</p>
             <a href={resume} target="_blank">
-              <p style={styles.tabs}>Resume</p>
+              <p className={css(styles.navigationItem)}>Resume</p>
             </a>
-            <p style={styles.tabs}>Contact</p>
+            <p className={css(styles.navigationItem)}>Contact</p>
           </div>
         </div>
       );
     }
 }
+
+const styles = StyleSheet.create({
+  bar: {
+    position: 'fixed',
+    color: 'white',
+    padding: '25px',
+    fontFamily: 'lato, sans-serif',
+    fontWeight: '100',
+    fontSize: '15px',
+    width: '100%',
+    backgroundColor: 'black',
+    zIndex: '1',
+    alignItems: 'center',
+    display: 'flex',
+    flexWrap: 'wrap',
+    flexGrow: '1',
+
+    '@media (max-width: 800px)': {
+      justifyContent: 'center',
+      width: 'auto'
+    }
+  },
+  titleContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    fontSize: '25px',
+
+    '@media (max-width: 800px)': {
+      textAlign: 'center',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    }
+  },
+  navigationContainer: {
+    display: 'flex',
+    marginLeft: 'auto',
+    textAlign: 'center',
+
+    '@media (max-width: 800px)': {
+      display: 'block',
+      marginLeft: '0px',
+    }
+  },
+  navigationItem: {
+    display: 'inline-block',
+    margin: '0px 20px 0px 20px',
+    verticalAlign: 'middle',
+
+    '@media (max-width: 800px)': {
+      marginBottom: '5px',
+      marginTop: '20px'
+    }
+  }
+
+})
 
 export default Navbar;

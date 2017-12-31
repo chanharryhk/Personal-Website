@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Navbar from './components/Navbar';
 import Introduction from './components/Introduction';
-import ContactBar from './components/ContactBar';
+import MediaBar from './components/MediaBar';
 import Experience from './components/Experience';
+import AboutMe from './components/AboutMe';
 import './App.css';
 
 class App extends Component {
@@ -17,7 +17,8 @@ class App extends Component {
         */}
         <Navbar/>
         <Introduction/>
-        <ContactBar/>
+        <MediaBar/>
+        <AboutMe/>
         <Experience/>
       </div>
     );

@@ -3,7 +3,7 @@ import './Introduction.css';
 
 const styles = {
   intro: {
-    paddingTop: '15%',
+    paddingTop: '225px',
     left: '0',
     right: '0',
     color: 'white',
@@ -40,7 +40,7 @@ class Introduction extends Component {
       return(
         <div style={styles.intro}>
           <h1>Hi, I'm Harry Chan</h1>
-          <h2>{text[count]}</h2>
+          <h2 className='fade-in'>{text[count]}</h2>
         </div>
       );
     }
