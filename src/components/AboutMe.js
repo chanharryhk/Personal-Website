@@ -16,7 +16,7 @@ class ContactBar extends Component {
           <Grid.Column>
             <h1>About Me</h1>
             <p>
-
+              I'm a Computer Engineer at Queen's University!
             </p>
           </Grid.Column>
         </Grid>
