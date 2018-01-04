@@ -29,8 +29,9 @@ class ContactBar extends Component {
           <a href={emailLink}>
             <Image style={styles.icon} src={mail} />
           </a>
-          <Image style={styles.icon} src={medium} />
-
+          {/*
+            <Image style={styles.icon} src={medium} />
+          */}
         </Image.Group>
       </div>
     );
