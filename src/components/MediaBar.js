@@ -13,26 +13,26 @@ const emailLink = 'mailto:chanharryhk@gmail.com';
 const styles = {
   icon: {
     margin: '50px 25px 5px 25px',
+    width: '80px'
   }
 }
 class ContactBar extends Component {
   render(){
     return(
       <div>
-        <Image.Group size='tiny'>
+
           <a href={githubLink} target="_blank">
-            <Image style={styles.icon} src={github} />
+            <img style={styles.icon} src={github} />
           </a>
           <a href={linkedInLink} target="_blank">
-            <Image style={styles.icon} src={linkedIn} />
+            <img style={styles.icon} src={linkedIn} />
           </a>
           <a href={emailLink}>
-            <Image style={styles.icon} src={mail} />
+            <img style={styles.icon} src={mail} />
           </a>
           {/*
             <Image style={styles.icon} src={medium} />
           */}
-        </Image.Group>
       </div>
     );
   }

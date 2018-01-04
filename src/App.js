@@ -4,6 +4,7 @@ import Introduction from './components/Introduction';
 import MediaBar from './components/MediaBar';
 import Experience from './components/Experience';
 import AboutMe from './components/AboutMe';
+import ContactMe from './components/ContactMe';
 import './App.css';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
         <MediaBar/>
         <AboutMe/>
         <Experience/>
+        <ContactMe/>
       </div>
     );
   }

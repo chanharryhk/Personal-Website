@@ -1,28 +1,35 @@
 import React, {Component} from 'react';
-import { Grid } from 'semantic-ui-react';
+import { StyleSheet, css } from 'aphrodite';
 
-const styles = {
-  container: {
-    paddingTop: '25%',
-    color: 'white',
-  }
-}
+import qhacks from '../images/qhacks.png'
 
 class ContactBar extends Component {
   render(){
     return(
-      <div style={styles.container}>
-        <Grid centered columns={2}>
-          <Grid.Column>
-            <h1>About Me</h1>
-            <p>
-              I'm a Computer Engineer at Queen's University!
-            </p>
-          </Grid.Column>
-        </Grid>
+      <div className={css(styles.container)}>
+        <h1>About Me</h1>
+        <p className={css(styles.content)}>
+          I'm a Computer Engineer at studying at Queen's University!
+          <br/><br/>
+          Catch me <i>coding</i> away at on a ĐApp
+          <br/>
+          or
+          <br/>
+          Staring at Coinmarketcap.com
+        </p>
       </div>
-    );
+    )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    padding: '250px 0px 75px 0px',
+    color: 'white',
+  },
+  content: {
+    fontSize: '20px'
+  },
+})
 
 export default ContactBar;
