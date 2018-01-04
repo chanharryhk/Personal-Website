@@ -1,4 +1,4 @@
-# My Personal Website
+# [My Personal Website](http://harry.surge.sh/)
 Built with React
 ## Install
 `git clone https://github.com/chanharryhk/Personal-Website`
@@ -12,6 +12,4 @@ Built with React
 
 will run the program on your default browser in `localhost:3000`
 ## Hosted
-Website can be found here
-
-[Click Me!](http://harry.surge.sh/)
+Website is hosted on surge.sh
