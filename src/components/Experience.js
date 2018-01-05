@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Grid, Image, Divider} from 'semantic-ui-react';
+import { Grid, Image, Divider,  Button, Icon} from 'semantic-ui-react';
 import { StyleSheet, css } from 'aphrodite';
 
 import ethWaterloo from '../images/ethWaterloo.png';
@@ -24,7 +24,7 @@ class Experience extends Component {
             <h2>
               ConsenSys
             </h2>
-            <Divider className={css(styles.leftDivider)}/>
+            <Divider fitted='true' className={css(styles.leftDivider)}/>
             <br/><br/>
             <p className={css(styles.content)}>
               I had the pleasure of interning with <i>ConsenSys Toronto</i> this summer!

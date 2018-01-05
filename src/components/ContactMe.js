@@ -8,7 +8,7 @@ class ContactMe extends Component{
     <div className={css(styles.container)}>
       <h1>Contact Me</h1>
       <ul>
-        <li></li>
+        <li>WEBSITE STILL UNDER MAJOR RE-CONSTRUCTION</li>
         <li></li>
         <li></li>
       </ul>
